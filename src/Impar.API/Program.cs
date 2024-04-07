@@ -17,6 +17,9 @@ builder.Services.AddDbContext<EntityContext>(options =>
 builder.Services.AddControllers().AddJsonOptions(x =>
 	x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
+builder.Services.AddControllers().AddJsonOptions(x =>
+	x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
