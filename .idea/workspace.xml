@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0371eba4-d6c6-437d-b05d-241be5df891d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Impar.API/Controllers/CarController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Impar.API/DTOs/CarDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Impar.API/DTOs/PhotoDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Impar.Domain/Models/Car.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Impar.Domain/Models/Photo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ImparTesteAPI/.idea/efCoreCommonOptions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImparTesteAPI/.idea/efCoreCommonOptions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ImparTesteAPI/.idea/efCoreDialogsState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImparTesteAPI/.idea/efCoreDialogsState.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2d5964e7-135a-4e5d-98f0-9e44eeaeb9b2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2d5964e7-135a-4e5d-98f0-9e44eeaeb9b2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Impar.API/Impar.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Impar.API/Impar.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Impar.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Impar.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Impar.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Impar.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Impar.Infra/Impar.Infra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Impar.Infra/Impar.Infra.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Impar.Infra/Migrations/EntityContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Impar.Infra/Migrations/EntityContextModelSnapshot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,27 +25,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ekL68UGQnK3R2DwDUwogkbnHAr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/setup-project",
-    "last_opened_file_path": "C:/Users/patri/Desktop/ImparTesteAPI"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/setup-project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/patri/Desktop/ImparTesteAPI&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "azure"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;azure&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
 </project>
