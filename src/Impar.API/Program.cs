@@ -1,13 +1,21 @@
 using System.Text.Json.Serialization;
 using Impar.Infra.Context;
+using ImparTesteAPI.Services;
+using ImparTesteAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+const string myAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
-// Add services to the container.
-
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy(name: myAllowSpecificOrigins,
+		policy  =>
+		{
+			policy.WithOrigins("*").AllowAnyHeader().AllowAnyMethod().Build();
+		});
+});
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -20,7 +28,11 @@ builder.Services.AddControllers().AddJsonOptions(x =>
 builder.Services.AddControllers().AddJsonOptions(x =>
 	x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
+builder.Services.AddScoped<ICarService, CarService>();
+
+
 var app = builder.Build();
+app.UseCors(myAllowSpecificOrigins);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
