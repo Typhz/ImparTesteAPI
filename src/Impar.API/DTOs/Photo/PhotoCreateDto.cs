@@ -1,6 +1,6 @@
 ﻿namespace ImparTesteAPI.DTOs;
 
-public class PhotoDto
+public class PhotoCreateDto
 {
 	public string Base64 { get; set; }
 }
