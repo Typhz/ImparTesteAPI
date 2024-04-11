@@ -23,7 +23,6 @@ namespace Impar.Infra.Context
             modelBuilder.Entity<Car>().Property(p => p.Id).HasColumnName("id");
             modelBuilder.Entity<Car>().Property(p => p.PhotoId).HasColumnName("photo_id");
             modelBuilder.Entity<Car>().Property(p => p.Name).HasColumnName("name");
-            modelBuilder.Entity<Car>().Property(p => p.Status).HasColumnName("status");
 
             modelBuilder.Entity<Car>(entity =>
             {
@@ -31,8 +30,6 @@ namespace Impar.Infra.Context
                 entity.Property(e => e.Id).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Name).HasMaxLength(50);
-
-                entity.Property(e => e.Status).HasMaxLength(50);
 
                 entity.HasOne(c => c.Photo)
                     .WithOne(p => p.Car)

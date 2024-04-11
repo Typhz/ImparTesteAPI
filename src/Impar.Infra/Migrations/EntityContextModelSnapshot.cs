@@ -39,11 +39,6 @@ namespace Impar.Infra.Migrations
                         .HasColumnType("int")
                         .HasColumnName("photo_id");
 
-                    b.Property<string>("Status")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasColumnName("status");
-
                     b.HasKey("Id");
 
                     b.ToTable("cars", (string)null);
