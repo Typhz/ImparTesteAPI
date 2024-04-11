@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0371eba4-d6c6-437d-b05d-241be5df891d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Impar.API/DTOs/Car/CarReadDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Impar.API/DTOs/Car/CarUpdateDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Impar.API/Services/CarService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Impar.API/Services/Interfaces/ICarService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ImparTesteAPI/.idea/efCoreCommonOptions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImparTesteAPI/.idea/efCoreCommonOptions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ImparTesteAPI/.idea/efCoreDialogsState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImparTesteAPI/.idea/efCoreDialogsState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2d5964e7-135a-4e5d-98f0-9e44eeaeb9b2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2d5964e7-135a-4e5d-98f0-9e44eeaeb9b2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Impar.API/Impar.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Impar.API/Impar.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Impar.Infra/Migrations/EntityContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Impar.Infra/Migrations/EntityContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Impar.API/Controllers/CarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impar.API/Controllers/CarController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Impar.API/DTOs/CarDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impar.API/DTOs/Car/CarCreateDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Impar.API/DTOs/PhotoDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impar.API/DTOs/Photo/PhotoCreateDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Impar.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impar.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Impar.Domain/Models/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impar.Domain/Models/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Impar.Infra/Context/EntityContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impar.Infra/Context/EntityContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Impar.Infra/Impar.Infra.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impar.Infra/Impar.Infra.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Impar.Infra/Migrations/EntityContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Impar.Infra/Migrations/EntityContextModelSnapshot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,19 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/setup-project&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/patri/Desktop/ImparTesteAPI&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/setup-project",
+    "last_opened_file_path": "C:/Users/patri/Desktop/ImparTesteAPI",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;azure&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "azure"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
 </project>
