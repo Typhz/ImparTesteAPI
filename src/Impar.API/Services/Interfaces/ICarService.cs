@@ -1,5 +1,4 @@
-﻿using ImparTesteAPI.DTOs;
-
+﻿using ImparTesteAPI.DTOs.Car;
 namespace ImparTesteAPI.Services.Interfaces;
 
 public interface ICarService

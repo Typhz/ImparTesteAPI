@@ -1,8 +1,8 @@
 ﻿using Impar.Infra.Context;
-using ImparTesteAPI.DTOs;
 using ImparTesteAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Impar.Domain.Models;
+using ImparTesteAPI.DTOs.Car;
 
 namespace ImparTesteAPI.Services
 {

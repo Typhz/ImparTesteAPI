@@ -1,4 +1,4 @@
-﻿namespace ImparTesteAPI.DTOs;
+﻿namespace ImparTesteAPI.DTOs.Car;
 
 public class CarUpdateDto
 {

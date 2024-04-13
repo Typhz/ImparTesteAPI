@@ -1,8 +1,7 @@
-﻿namespace ImparTesteAPI.DTOs;
+﻿namespace ImparTesteAPI.DTOs.Car;
 
 public class CarCreateDto
 {
-	public string Name { get; set; }
-	public IFormFile ImageFile { get; set; }
-
+	public string Name { get; set; } = null!;
+	public IFormFile ImageFile { get; set; } = null!;
 }

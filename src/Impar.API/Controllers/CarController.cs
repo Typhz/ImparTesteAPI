@@ -1,4 +1,5 @@
 ﻿using ImparTesteAPI.DTOs;
+using ImparTesteAPI.DTOs.Car;
 using ImparTesteAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,7 +14,7 @@ public class CarController : ControllerBase
 	public CarController(ICarService carService)
 	{
 		_carService = carService;
-	}
+	}	
 
 	[HttpGet]
 	public async Task<ActionResult> Index(int pageNumber = 1, int pageSize = 10, string? searchTerm = null)
