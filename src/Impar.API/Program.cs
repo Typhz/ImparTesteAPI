@@ -3,10 +3,21 @@ using Impar.Infra.Context;
 using ImparTesteAPI.Services;
 using ImparTesteAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using Serilog.Events;
+using Serilog.Formatting.Compact;
 
 var builder = WebApplication.CreateBuilder(args);
-const string myAllowSpecificOrigins = "_myAllowSpecificOrigins";
+Log.Logger = new LoggerConfiguration()
+	.MinimumLevel.Debug()
+	.MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+	.Enrich.FromLogContext()
+	.WriteTo.Console()
+	.WriteTo.File(new CompactJsonFormatter(), "./logs/log-.txt", rollingInterval: RollingInterval.Day)
+	.CreateLogger();
+builder.Host.UseSerilog();
 
+const string myAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddCors(options =>
 {
 	options.AddPolicy(name: myAllowSpecificOrigins,
@@ -20,7 +31,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<EntityContext>(options =>
-	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")!));
 
 builder.Services.AddControllers().AddJsonOptions(x =>
 	x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
