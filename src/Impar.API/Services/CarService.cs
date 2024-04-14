@@ -3,6 +3,7 @@ using ImparTesteAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Impar.Domain.Models;
 using ImparTesteAPI.DTOs.Car;
+using ImparTesteAPI.Utilities;
 
 namespace ImparTesteAPI.Services
 {
@@ -15,17 +16,17 @@ namespace ImparTesteAPI.Services
 			_context = context;
 		}
 
-		public async Task<List<CarReadDto>> GetAllCarsAsync(int pageNumber = 1, int pageSize = 10, string? searchTerm = null)
+		public async Task<List<CarReadDto>> GetAllCarsAsync(PaginationAndSearchParameters paginationAndSearchParameters)
 		{
 			var query = _context.Cars.AsQueryable();
-			if (!string.IsNullOrEmpty(searchTerm))
+			if (!string.IsNullOrEmpty(paginationAndSearchParameters.SearchName))
 			{
-				query = query.Where(car => car.Name.Contains(searchTerm));
+				query = query.Where(car => car.Name.Contains(paginationAndSearchParameters.SearchName));
 			}
 
 			var cars = await query
-				.Skip((pageNumber - 1) * pageSize)
-				.Take(pageSize)
+				.Skip((paginationAndSearchParameters.PageNumber - 1) * paginationAndSearchParameters.PageSize)
+				.Take(paginationAndSearchParameters.PageSize)
 				.Include(c => c.Photo)
 				.ToListAsync();
 
@@ -33,7 +34,7 @@ namespace ImparTesteAPI.Services
 			{
 				Id = car.Id,
 				Name = car.Name,
-				Base64 = car.Photo?.Base64
+				Base64 = car.Photo.Base64
 			}).ToList();
 
 			return carDtos;
@@ -52,7 +53,7 @@ namespace ImparTesteAPI.Services
 			{
 				Id = car.Id,
 				Name = car.Name,
-				Base64 = car.Photo?.Base64
+				Base64 = car.Photo.Base64
 			};
 
 			return carDto;
@@ -89,7 +90,7 @@ namespace ImparTesteAPI.Services
 			{
 				Id = car.Id,
 				Name = car.Name,
-				Base64 = car.Photo?.Base64
+				Base64 = car.Photo.Base64
 			};
 
 			return carDto;
