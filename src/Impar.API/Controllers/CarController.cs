@@ -1,5 +1,7 @@
 ﻿using ImparTesteAPI.DTOs;
+using ImparTesteAPI.DTOs.Car;
 using ImparTesteAPI.Services.Interfaces;
+using ImparTesteAPI.Utilities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ImparTesteAPI.Controllers;
@@ -13,12 +15,12 @@ public class CarController : ControllerBase
 	public CarController(ICarService carService)
 	{
 		_carService = carService;
-	}
+	}	
 
 	[HttpGet]
-	public async Task<ActionResult> Index(int pageNumber = 1, int pageSize = 10, string? searchTerm = null)
+	public async Task<ActionResult> Index([FromQuery] PaginationAndSearchParameters paginationAndSearchParameters)
 	{
-		var carDtos = await _carService.GetAllCarsAsync(pageNumber, pageSize, searchTerm);
+		var carDtos = await _carService.GetAllCarsAsync(paginationAndSearchParameters);
 		return Ok(carDtos);
 	}
 
